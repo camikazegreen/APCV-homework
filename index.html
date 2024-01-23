@@ -318,7 +318,8 @@ a much smaller footprint than an entirely custom site. Pantheon provides Dev and
 </article>  
 <article>
     <h1>Addendum</h1>
-    <p>For this assignment I used a <a href="../../Quickstart Whitepaper.pdf" target="_blank">whitepaper</a> that I wrote for my job a few years ago. It is a multiple page PDF document with images. </p>
+    <p>For this assignment I used a <a href="/Quickstart Whitepaper.pdf" target="_blank">whitepaper</a> that I wrote for my job a few years ago. It is a multiple page PDF document with images. </p>
+    <p>I plan to:</p>
     <ul>
         <li>Use heading tags for each of the headings in the whitepaper.</li>
         <li>Use figure tags for all of my images. They are all different sizes which looks horrible, but I won't worry about that for this assignment.</li>
@@ -326,7 +327,13 @@ a much smaller footprint than an entirely custom site. Pantheon provides Dev and
         <li>Only use a table for the actual table on <a href="#page-6">page 6</a>.</li>
         <li>Wrap all of my paragraphs in p tags.</li>
         <li>Use aside tags for section that aren't thematically in line with the rest of the content, even if they are in the center of the page.</li>
-
+        <li>After completing this assignment, the use of the /apcv403/lab-2 file structure caused my build steps to fail for different reasons in AWS and Azure:
+            <ul>
+                <li>AWS: err: mv: cannot move 'apcv403' to '/var/www/html/apcv403': Directory not empty</li>
+                <li>Azure: Failed to find a default file in the app artifacts folder (/). Valid default files: index.html,Index.html.</li>
+            </ul>
+        I moved the index.html file back to the root of my directory and it worked fine.
+        </li>
     </ul>
     <p></p>
     <p></p>
