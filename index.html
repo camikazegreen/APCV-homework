@@ -1,10 +1,92 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>UA Quickstart: The Value of Open Source and Continuous Delivery</title>
+    <title>Experiments with loading fonts</title>
+    <link rel="stylesheet" href="https://use.typekit.net/zoo4qte.css">
+    <link rel="stylesheet" href="https://use.typekit.net/zoo4qte.css">
+    <style type="text/css">
+        @font-face {
+            font-family: 'happiness_mood';
+            src:  
+                url('fonts/Happiness_Mood.ttf') format('truetype');
+        }
+        @font-face {
+            font-family: 'elrio';
+            src: url('fonts/ELRIOTT2.ttf');
+        }
+        @font-face {
+            font-family: 'single_day';
+            src: 
+                url('fonts/SingleDay-regular.ttf') format('truetype');
+        }
+
+        h1 {
+            font-family: elrio;
+
+        }
+        p.canvas {
+            font-family: "canvas-script", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+        }
+        p.nudgewink {
+            font-family: "p22-nudgewink-pro", sans-serif;
+            font-weight: 300;
+            font-style: normal;
+            font-size: large;
+        }
+        p.happiness {
+            font-family: "happiness_mood", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+        }
+        p.single_day {
+            font-family: "single_day";
+        }
+</style>
 </head>
 <body>
     <h1>Fun Font Experiments!</h1>
-    
+    <ol><li>
+
+    <p class="happiness">My first step was to look for interesting fonts on <a href="https://www.dafont.com/">DaFont</a>. There were lots of interesting fonts to choose from, but with the small sample of fonts that I tried to use I found their fonts to be unreliable. The heading on this page is rendering <a href="https://www.dafont.com/el-rio-lobo.font">El Rio Lobo</a> incorrectly for example, and is displaying errors in the console for "bad table directory". This paragraph is rendered using a groovy font called <a href="https://www.dafont.com/happiness-mood.font">Happiness Mood</a>.</p>
+
+    <p class="happiness">Since the DaFont fonts that I downloaded only came with a TrueType file when I downloaded them, I looked up <a href="https://stackoverflow.com/questions/24990554/how-to-include-a-font-ttf-using-css">how to render local TrueType fonts on Stack Overflow</a>. I moved the ".ttf" files into my <em>fonts</em> folder and added them into my project using the @font-face declaration. </p>
+
+    <code>
+        @font-face {<br>
+            font-family: 'happiness_mood';<br>
+            src:  <br>
+                url('fonts/Happiness_Mood.ttf') format('truetype');<br>
+        }
+    </code>
+
+    <p class="happiness">Next, I defined the css to actually use this new font-family:</p>
+    <code>
+        p.happiness {<br>
+            font-family: "happiness_mood", sans-serif;<br>
+            font-weight: 500;<br>
+            font-style: normal;<br>
+        }
+    </code>
+    <p class="happiness">This seemed to work fine, except for the errors mentioned for the El Rio font. However, most of the comments on StackOverflow were recommending the use of .woff or .otf files instead of or in addition to .ttf, and the fonts that I downloaded on DaFont only provided a .ttf file.</p>
+</li>
+<li>
+    <p class="single_day">In order to try to find fonts with the recommended file types from StackOverflow, I switched over to Google Fonts and found this cool font called <a href="https://fonts.google.com/specimen/Single+Day">Single Day</a>. Unfortunately, it also only provided a TrueType variant and I was not able to find other font downloads that provided .woff or .otf file downloads. I added this font using the same method as the early font, and it worked flawlessly.</p>
+</li>
+<li>
+<p class="nudgewink">
+        Then I switched over to using <a href="https://fonts.adobe.com/fonts/p22-nudgewink-pro">Adobe Typekit</a> since we have free access to this service as students at the University of Arizona. Using Adobe Typekit was easy and I didn't need to refer to any outside documentation, since the appropriate links and css declarations were provided when choosing a font:
+    </p>
+<code>
+    <link rel="stylesheet" href="https://use.typekit.net/zoo4qte.css">
+    p.nudgewink {
+            font-family: "p22-nudgewink-pro", sans-serif;
+            font-weight: 300;
+            font-style: normal;
+            font-size: large;
+</code>
+<p class="nudgewink">The only downside to Adobe Typekit, is that there is a noticeable lag when loading the page before it loads the font from Adobe.</p>
+</li>
 </body>
 </html>
