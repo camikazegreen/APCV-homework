@@ -3,7 +3,6 @@
 <head>
     <title>Experiments with loading fonts</title>
     <link rel="stylesheet" href="https://use.typekit.net/zoo4qte.css">
-    <link rel="stylesheet" href="https://use.typekit.net/zoo4qte.css">
     <style type="text/css">
         @font-face {
             font-family: 'happiness_mood';
@@ -23,11 +22,6 @@
         h1 {
             font-family: elrio;
 
-        }
-        p.canvas {
-            font-family: "canvas-script", sans-serif;
-            font-weight: 500;
-            font-style: normal;
         }
         p.nudgewink {
             font-family: "p22-nudgewink-pro", sans-serif;
@@ -88,5 +82,14 @@
 </code>
 <p class="nudgewink">The only downside to Adobe Typekit, is that there is a noticeable lag when loading the page before it loads the font from Adobe.</p>
 </li>
+<footer>
+        <p>Last updated: 
+            <span id="lastModified"></span>
+        </p>
+    </footer>
+    <script type="text/javascript">
+         var x = document.lastModified;
+         document.getElementById('lastModified').textContent = x;
+    </script>
 </body>
 </html>
