@@ -2,22 +2,29 @@
 <html>
     <head>
         <title>UA Quickstart: The Value of Open Source and Continuous Delivery</title>
+        <link rel="stylesheet" href="https://use.typekit.net/zoo4qte.css">
+        <link rel="stylesheet" href="styles/style.css">
     </head>
     <body>
-        <article>
-        <h1>
-            UA Quickstart: The Value of Open Source and Continuous Delivery
-        </h1>
-        <figure>
-                <img>
-                <figcaption></figcaption>
-            </figure>
-        <h2>Abstract</h2>
-        <p>Websites are incredibly important to our university for attracting quality students and faculty, driving fundraising campaigns and engaging with wildcats on campus and around the world.</p>
-        <p>The University of Arizona strives to have high quality websites that support our reputation as a premier research I university and further our mission as a land-grant institution.</p>
-        <p>UA Quickstart was developed to meet these goals using an open source model that leverages the strength of our distributed campus and continuously feeds back into itself to stay current and further meet the needs of different departments.</p>
-        <p>The value of Quickstart is increasing exponentially with each new website that adopts it. As both a product and a process, UA Quickstart is enabling faster delivery of websites that are branded, universally accessible, mobile responsive and cheaper to build, support and maintain.</p>
-        <nav>
+        <div class="redbar">
+            Arizona Quickstart
+        </div>
+        <div class="container">
+            <div class="grid-container">
+                <div>
+                <h1 class="abstract">
+                    The Value of <br>Open Source & <br>Continuous Delivery
+                </h1></div>
+                <div></div>
+                <div>
+                <article class="abstract">
+                    <h2>Abstract</h2>
+                    <p>Websites are incredibly important to our university for attracting quality students and faculty, driving fundraising campaigns and engaging with wildcats on campus and around the world.</p>
+                    <p>The University of Arizona strives to have high quality websites that support our reputation as a premier research I university and further our mission as a land-grant institution.</p>
+                    <p>UA Quickstart was developed to meet these goals using an open source model that leverages the strength of our distributed campus and continuously feeds back into itself to stay current and further meet the needs of different departments.</p>
+                    <p>The value of Quickstart is increasing exponentially with each new website that adopts it. As both a product and a process, UA Quickstart is enabling faster delivery of websites that are branded, universally accessible, mobile responsive and cheaper to build, support and maintain.</p>
+                </article></div>
+        <div><nav>
             <h2>Contents</h2>
             <ul>
                 <li><a href="#page-1">What goes into a website?</a></li>
@@ -31,16 +38,21 @@
                 <li><a href="#page-9">Continuous Delivery Model</a></li>
                 <li><a href="#page-10">Methodology</a></li>
             </ul>
-        </nav>
+        </nav></div>
+    </div>
         <h1 id="page-1">What Goes Into a Website?</h1>
+        <div class="grid-container">
+            <div>
         <figure>
                 <img src="../PNGs/Full Pyramid.png">
                 <figcaption>The pyramid of website requirements.</figcaption>
-            </figure>
+            </figure></div>
+            <div>
         <p>Websites are complex stacks of business requirements and technology that all build off of each other.</p>
         <p>There are entire careers dedicated to each layer in this stack. The higher layers add the most value, since they are the reason for your site to exist.</p>
         <p>The risk of failure increases as you go down the stack and each layer includes all of the risks above:</p>
         <p>Lack of results -><br>Embarassment -><br>Legal issues -><br>Loss of trust -><br>System Failure</p>
+    </div></div>
         <h2>One Brand, Many Websites</h2>
         <p>Universities are highly respected institutions with strong brands, but central marketing does not control the marketing of the individual colleges, schools and departments.</p>
         <h2>Accessibility</h2>
@@ -50,35 +62,43 @@
         <h2>Many Audiences</h2>
         <p>Universities have several very distinct audiences that they want to reach, and often with different objectives. The most common audiences are prospective students, current students, faculty, staff, alumni and donors. These different types of users cover every generation and level of technical ability, and they are all looking for different types of information.</p>
         <h1 id="page-2">What Makes *.arizona.edu?</h1>
+        <div class="grid-container">
+            <div>
         <h2>Conversion</h2>
         <p>Websites are designed to make desired actions easier!<br>(Enrollment, engagement, donations, use of services, etc.)</p>
         <p>Deliver differentiating message. Show what makes your unit special.</p>
-        <figure>
+    </div><div>
+        <figure class="pyramid">
                 <img src="../PNGs/conversion.png">
                 <figcaption>What a website is for.</figcaption>
             </figure>
+        </div><div>
         <h2>Quality</h2>
         <ul>
             <li>Leverage the unexpected with your voice and tone.</li>
             <li>Use photos and videos that are simple, bright and authentic.</li>
             <li>Utilize open space in your designs.</li>
             <li>Provide a good experience on mobile devices.</li>
-        </ul>
-        <figure>
+        </ul></div>
+        <div>
+        <figure class="pyramid">
                 <img src="../PNGs/quality.png">
                 <figcaption>How good a website is.</figcaption>
-            </figure>
+            </figure></div>
+            <div>
         <h2>Compliance</h2>
         <ul>
             <li>Brand Guidelines</li>
             <li>Accessibility (WCAG AA conformance)</li>
             <li>General Data Protection Regulation (GDPR)</li>
             <li>Browser compatability</li>
-        </ul>
-        <figure>
+        </ul></div>
+        <div>
+        <figure class="pyramid">
                 <img src="../PNGs/compliance.png">
                 <figcaption>If you're following the rules.</figcaption>
-            </figure>
+            </figure></div>
+            <div>
         <h2>Security</h2>
         <ul>
             <li>Best practices in development</li>
@@ -87,11 +107,13 @@
             - OS, Web Server, Database, PHP, Drupal, all modules</li>
             <li>Secure user auth - use Webauth for all logins</li>
             <li>Enforce https</li>
-        </ul>
-        <figure>
+        </ul></div>
+        <div>
+        <figure class="pyramid">
                 <img src="../PNGs/security.png">
                 <figcaption>How safe a site is.</figcaption>
-            </figure>
+            </figure></div>
+            <div>
         <h2>Servers</h2>
         <ul>
             <li>Systems Administrator</li>
@@ -100,11 +122,13 @@
             <li>Git workflow / Deployment strategy</li>
             <li>Disaster Recovery</li>
             <li>Logging and Monitoring</li>
-        </ul>
-        <figure>
+        </ul></div>
+        <div>
+        <figure class="pyramid">
                 <img src="../PNGs/servers.png">
                 <figcaption>The base of the pyramid. How stable a site is.</figcaption>
-            </figure>
+            </figure></div>
+        </div>
         <h1 id="page-3">Our Landscape</h1>
         <aside>
             <p>The University of Arizona is a public, land-grant, research I university.</p>
@@ -120,6 +144,8 @@
                 <figcaption>University of Arizona Colleges by number of enrolled students.</figcaption>
             </figure>
         <h2>8 Funding Sources: All Distributed Differently</h2>
+        <div class="grid-container">
+            <div>
         <ul>
             <li>
                 <h3>12% from State Appropriations</h3>
@@ -141,18 +167,22 @@
                 <h3>17% from Other</h3>
                 <p>This is made up of auxiliary income (earned through cost recovery), investment income, state sales tax and other revenue. All cost recovery income goes directly to department budgets.</p>
             </li>
-        </ul>
+        </ul></div>
+        <div>
         <figure>
                 <img src="../PNGs/pie chart.png">
                 <figcaption>Division of University of Arizona income streams.</figcaption>
             </figure>
+        </div></div>
         <h2>1 Result: Decentralized Resources</h2>
-        <p><strong>Top-down mandates won’t work in a decentralized environment. The role of Central IT and Cen- tral Marketing is to provide guidance and the tools needed to be successful.</strong></p>
+        <p><strong>Top-down mandates won’t work in a decentralized environment. The role of Central IT and Central Marketing is to provide guidance and the tools needed to be successful.</strong></p>
         <p>The vast majority of funds are directed by individual colleges and departments instead of being directed centrally. This funding model results in a very decentralized university with colleges and departments that are financially independent from central administration.</p>
         <p>Each college and department has vastly different resources. Some have entire IT departments with server infrastructure, and Marketing Departments with teams of Web Developers. Some don’t have any dedicated personnel for the web.</p>
         <h1 id="page-4">Surveying the *.arizona.edu Domain</h1>
         <p><strong>More than $5 Million spent annually on Web personnel.<br>$100s of Thousands spent on outside agencies each year.<br>Sites are typically redesigned and rebuilt every 3 - 5 years.</strong></p>
-        <section>
+        <div class="grid-container">
+        <div>
+            
             <p>There are currently over two thousand websites on the arizona.edu domain.</p>
             <p><strong>1% of sites make up 35% of traffic</strong><br>
                 These are our Flagship sites, such as www.arizona.edu.</p>
@@ -162,21 +192,25 @@
             <p><strong>89% of sites make up 30% of traffic</strong><br>
                 These sites individually have a small audience, but in aggregate they tell the real story of our university.
             </p>
-        </section>
-        <section>
+        </div>
+        <div>
             <p>Every individual that visits our websites will have a different pattern, but most will include visits to our Flagship sites, the websites of their college or department and many smaller sites that are specifically relevant to them.</p>
             <p>The design, user experience and level of quality varies greatly across the *.arizona.edu sites that faculty, staff, students and prospective students visit on any given day.</p>
-        </section>
+        </div>
+    </div>
         <figure>
                 <img src="../PNGs/longtail.png">
                 <figcaption>The distribution of University of Arizona website traffic.</figcaption>
             </figure>
+            <div class="card-container">
+            <div>
         <h2>Flagship Sites</h2>
         <h3>Current Strategy</h3>
         <p>Usually have enough resources behind them to be beautiful and functional.</p>
         <h3>Challenges</h3>
         <p>The more time and resources spent on these sites, the bigger the disparity between them and the rest of the sites on campus making it harder to have a cohesive brand.</p>
         <p>They set the example for the rest of campus. If the flagship websites do their own thing, so will everyone else.</p>
+        </div><div>
         <h2>Large Sites</h2>
         <h3>Current Strategy</h3>
         <p>Built by either an agency or in house technical personnel as one part of their job.</p>
@@ -184,6 +218,7 @@
         <p>All of these sites have unique codebases that are difficult to maintain at scale.</p>
         <p>They don’t present a cohesive brand or experience to end users.</p>
         <p>Many groups on campus are devoting resources to solving the same problems.</p>
+        </div><div>
         <h2>Long-tail Sites</h2>
         <h3>Current Strategy</h3>
         <p>Built by non-technical personnel, grad student or low cost vendor.</p>
@@ -192,6 +227,7 @@
         <p>There is rarely consideration for long term maintenance and support.</p>
         <p>They all look vastly different.</p>
         <p>High turnover makes this extremely risky.</p>
+    </div></div>
         <h1 id="page-5">Our Past Solutions</h1>
         <h2>The Vendor Model</h2>
         <p>There are clear up front benefits to having an outside agency build your website. Even choosing a high end agency once every three to five years will be much cheaper than hiring dedicated web personnel and you get the benefit of having a talented team that is experienced in all of the separate aspects of building a website for a one time cost.</p>
@@ -207,20 +243,23 @@
         <p>The utility and scalability of Site-in-a-Box plateaued fairly quickly, but the shortcomings of this platform informed the development of the Quickstart workflow. In order for this platform to effectively meet the needs of campus, it would need to be more than just a site in a box. It would need to be flexible enough to handle serious customization. It would also need a completely new workflow in order to keep the start state current, but also allow all sites built with it to stay current as well.</p>
         <h1 id="page-6">The Value of Quickstart</h1>
         <h2>Savings on New Site Builds</h2>
-        <p>When using Quickstart as the base for a new site build, much of the work has already been done and that translates to significant savings. The more complex a site is, the more work needs to be done on top of Quickstart, so the percent savings goes down. However, because the typical cost of a complex site is so large, the savings is still significant.</p>
-        <section>
+        
+        <div class="grid-container" id="new-sites">
+        <div>
             <figure>
                 <img src="../PNGs/qswork.png">
                 <figcaption>An analysis of website project quotes shows that simpler sites have a larger amount of their project needs covered by Quickstart. Larger sites have content creation as a higher percentage of the overall project.</figcaption>
-            </figure>
+            </figure></div>
+            <div>
+                <p>When using Quickstart as the base for a new site build, much of the work has already been done and that translates to significant savings. The more complex a site is, the more work needs to be done on top of Quickstart, so the percent savings goes down. However, because the typical cost of a complex site is so large, the savings is still significant.</p>
             <p>The University of Arizona has over 2000 websites, and each of these is typically rebuilt every 3-5 years. Consider the cost savings of building every Arizona website.</p>
             <table>
                 <thead>
-                    <td></td>
-                    <td># of Sites</td>
-                    <td>Typical Cost</td>
-                    <td>Savings</td>
-                    <td>Total Savings</td>
+                    <th></th>
+                    <th># of Sites</th>
+                    <th>Typical Cost</th>
+                    <th>Savings</th>
+                    <th>Total Savings</th>
                 </thead>
                 <tr>
                     <td>Flagship Sites</td>
@@ -251,36 +290,44 @@
                     <td><strong>$11,052,000</strong></td>
                 </tr>
             </table>
-        </section>
+        </div></div>
         <aside><strong>Total Savings on New Site Builds:<br>$11 Million Over Five Years</strong></aside>
-        <section>
+        <div class="grid-container">
+        <div>
             <h2>Savings on Maintenance</h2>
             <p>A typical Drupal website will take approximately 50 hours per year to maintain. When every site is unique, you don’t save very much maintenance time as you scale, so each additional site that a team manages will take approximately 50 hours per year to maintain. This work time can not be evenly distributed throughout the year, since security updates will typically be needed for many of your sites simultaneously, the work for updating all sites happens at the same time which requires a larger staff to deal with capacity.</p>
             <p>Operating a scalable platform of sites that share a common codebase is more expensive on the front end, but the marginal cost to add more sites is very small. Once you cross a threshold of about 130 sites (6500 hours), it becomes cheaper to operate the scalable platform and the cost savings will continue to grow with each additional site added.</p>
+        </div>
+        <div>
             <figure>
                 <img src="../PNGs/qsmaint.png">
                 <figcaption>It's more expensive to build a distribution initially, but after about 130 sites the maintenance savings add up quickly.</figcaption>
             </figure>
-        </section>
+        </div>
+    </div>
         <h1 id="page-7">How Quickstart Works</h1>
-        <section>
             <h2>Compliance & Quality</h2>
+        <div class="grid-container">
+        <div>
             <p>Quickstart is built using an open source model. At any time, the latest version can be downloaded and used as a starting point for a new website. The community that contibutes to Quickstart, called UA Digital, is made up of developers, designers and analysts from across campus. There are representatives from IT, Marketing, Student Affairs, the Disability Resource Center and other colleges
 and departments. Every new feature added gets reviewed for code quality, brand compliance, accessibility and design.</p>
             <p>Out of the box it is designed to be in compliance with all branding, accessibility and compatability standards.</p>
             <p>There is also a certain level of quality built in. The style framework provides mobile responsiveness, spacing, typography and layout. The built in features provide an easy way to add pages, content and views. The most commonly needed customizations are already there and it’s easy to add more if needed.</p>
             <p>Using Quickstart as the base of a new website project can allow you to focus all of your time and budget on the top tiers: creating quality content and driving conversions.</p>
+        </div><div>
             <figure>
                 <img src="../PNGs/mid stack.png">
                 <figcaption>Most Compliance needs are met, and a portion of the Quality.</figcaption>
             </figure>
-        </section>
-        <section>
+        </div></div>
             <h2 id="page-8">The Open Source Model</h2>
+            <div class="grid-container">
+                <div>
             <figure>
-                <img src="../PNGs/contribute.png">
+                <img src="../PNGs/contribute.png" style="height: 570px;">
                 <figcaption>How the platform continues to grow.</figcaption>
-            </figure>
+            </figure></div>
+            <div>
             <p>The open source model works really well in a decentralized environment. The individual contributors are all people that are using Quickstart to meet the needs of their own department or unit.</p>
             <p>Having a broad base of contributors that are all close to the problems that are trying to be solved with Quickstart allows it to organically solve the problems that are most in need of being solved.</p>
             <p>Here’s the way it works in practice:</p>
@@ -289,35 +336,38 @@ and departments. Every new feature added gets reviewed for code quality, brand c
             <p>They discover that there is some custom functionality that they need but Quickstart doesn’t yet have, so they build it right on top and quickly finish their website.</p>
             <p>That change is then proposed to UA Digital as a feature that would also be useful to other departments. If agreed, a Pull Request is made to the Master Branch of the Quickstart repository to add that feature to Quickstart.</p>
             <p>When that code is merged, the new feature will be available to anyone that pulls the latest copy of the Quickstart codebase.</p>
-        </section>
+        </div></div>
         <h1>How Quickstart Works</h1>
-        <section>
             <h2>Servers & Security</h2>
+            <div class="grid-container">
+                <div>
             <p>The major challenge for security is that things are always changing. Just because your site or application is considered secure today does not mean that it will
 be tomorrow. Drupal 7 core has had 59 versions released since 2011, which is
 an average of 8 updates per year. In addition, a typical Drupal site will have between 80 and 100 contributed modules installed, each of which will require regular security updates. Every other layer in your technology stack must also be maintained, including the operating system, database, web server and programming languages.</p>
             <p>Every layer of a website is built on the layers beneath and every update has the potential to impact the front end functionality of the website, so it is important to have a test environment for applying updates and the time and availability to both apply the updates and complete the testing before pushing to production.</p>
-            <p>The Server level contains all of the infrastructure that your website runs on. This includes your application, database and file servers, load balancers, caching layers and the configuration and connections between all of these pieces.</p>
+            <p>The Server level contains all of the infrastructure that your website runs on. This includes your application, database and file servers, load balancers, caching layers and the configuration and connections between all of these pieces.</p></div>
+            <div>
             <figure>
                 <img src="../PNGs/bottom stack.png">
                 <figcaption>Server and Security needs are covered.</figcaption>
             </figure>
-        </section>
-        <section>
+        </div></div>
             <h2 id="page-9">Continuous Delivery:<br>The Quickstart Upstream on Pantheon</h2>
             <p><strong>“With Pantheon Upstreams, you package your core CMS, custom code, theme, and open source components into a desired start-state to use over and over again. Spin up new sites in seconds, with the ability to release improvements to the shared upstream code at scale. No more starting from scratch or needing senior talent to set up a new project, no more headaches over updates.”</strong></p>
             <p>Our partnership with Pantheon means that they take care of the servers and provide the means for us to continuously deliver all of the necessary security updates at scale. Once a site is on the Quickstart Upstream, it is easy to ensure that it has not only security updates, but all of the latest features and branding standards as well. Since all of the sites share the same codebase, we can thoroughly test the updates once and apply them to all of our sites with confidence.</p>
+            <div class="grid-container">
+                <div>
             <figure>
                 <img src="../PNGs/upstream.png">
                 <figcaption>The base of the website is covered by the upstream distribution even if it has additional custom needs.</figcaption>
-            </figure>
+            </figure></div>
+            <div>
             <p>We still need to test that none of a site’s custom features have been negatively affected by an update, but that is
 a much smaller footprint than an entirely custom site. Pantheon provides Dev and Test environments that are identical to the Live environment to make testing all of the updates easy.</p>
-<p><strong>Taken together, the Open Source development and Continuous Delivery of Quickstart allows site owners to dedicate their time and resources to the quality of their content and reaching their goals.</strong></p>
-        </section>
+<p><strong>Taken together, the Open Source development and Continuous Delivery of Quickstart allows site owners to dedicate their time and resources to the quality of their content and reaching their goals.</strong></p></div></div>
 </article>  
 <article>
-    <h1>Addendum</h1>
+    <h1>Addendum: Assignment 1</h1>
     <p>For this assignment I used a <a href="/Quickstart Whitepaper.pdf" target="_blank">whitepaper</a> that I wrote for my job a few years ago. It is a multiple page PDF document with images. </p>
     <p>I plan to:</p>
     <ul>
@@ -335,14 +385,22 @@ a much smaller footprint than an entirely custom site. Pantheon provides Dev and
         I moved the index.html file back to the root of my directory and it worked fine.
         </li>
     </ul>
-    <p></p>
-    <p></p>
 </article>
+<article>
+    <h1>Addendum: Assignment 2</h1>
+    <p>For this assignment I focused on: 
+        <ul>
+            <li>Spacing using display: grid.<br> I had some trouble with this, since it was only working with divs, so I ended up removing all of my semantic sections and replaced them with divs. This got the spacing correct, but I lost a lot of semantic meaning that I would like to add back in during a future assignment.</li>
+            <li>Styling my fonts using Proxima Nova that I added via Adobe Typekit.</li>
+            <li>Adding a red header to the top of the page that stays there while you scroll.</li>
+            <li>Styling my table to have appropriate spacing.</li></ul>
+            <p>Overall, I ended up having to modify my html markup quite a bit to get my styles to apply correctly. This was primarily adding classes, but also correcting faulty markup (such as replacing my td table headers with th) and unfortunately replacing my sections with divs.</p>
+        </article>
         <footer>
         <p>Last updated: 
             <span id="lastModified"></span>
         </p>
-    </footer>
+    </footer></div>
     <script type="text/javascript">
          var x = document.lastModified;
          document.getElementById('lastModified').textContent = x;

@@ -1,0 +1,63 @@
+body {
+	font-family: "proxima-nova", sans-serif;
+	font-style: normal;
+}
+.redbar{
+  background: #ab0520;
+  padding: 8px 200px;
+  font-size: 2em;
+  color: white;
+  font-weight: 700;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+h1 {	
+	font-weight: 800;
+	text-transform: uppercase;
+	padding: 20px 0;
+}
+.abstract{
+	width: 500px;
+}
+.container{
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 68px;
+}
+.grid-container {
+  display: grid;
+  grid: auto / 520px auto;
+  grid-gap: 10px;
+  padding: 10px;
+}
+#new-sites{
+	grid: auto / 400px auto;
+}
+.card-container {
+  display: grid;
+  grid: auto / auto auto auto;
+  grid-gap: 40px;
+  padding: 10px;
+}
+img{
+	max-width: 100%;
+}
+.pyramid{
+	text-align: center;
+}
+.pyramid img{
+	height: 50px;
+}
+table{
+	width: 100%;
+	text-align: left;
+}
+th{
+	border-bottom: 2px solid;
+}
+td{
+	width: auto;
+}
