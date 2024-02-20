@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Holy Grid with Javascript</title>
+        <link rel="stylesheet" href="styles.css">
+        <script type="text/javascript" src="scripts.js"></script>
+    </head>
+    <body>
+        <div class="grid-container">
+        <div class="header">
+            <h1>Holy Grail Grid with Javascript</h1>
+        </div>
+            <nav class="side-nav">
+                <ul>
+        <li><a href="https://www.mapbox.com/" target="_blank" data-company="mapbox">MapBox</a></li>
+        <li><a href="https://www.onxmaps.com/" target="_blank" data-company="onx">OnX Maps</a></li>
+        <li><a href="https://www.esri.com/en-us/home" target="_blank" data-company="esri">Esri</a></li>
+        <li><a href="https://www.here.com/" target="_blank" data-company="here">HERE Technologies</a></li>
+        <li><a href="https://www.mapbox.com/" target="_blank" data-company="osm">OpenStreetMap</a></li>
+    </ul>
+            </nav>
+            <article class="main-content">
+                <h2>Companies I'd be interested in working for</h2>
+                <section id="companies">
+                <div id="instructions">Hover over the menu to learn more.</div>
+                <div id="mapbox"style="display: none;">
+                    <h3>MapBox</h3>
+                    <p>MapBox is a leading provider in the mapping and location cloud industry, offering developers powerful tools to create custom, dynamic maps and location-based experiences in their apps and websites. Known for its high-quality, customizable maps, MapBox's services are utilized across various industries for navigation, tracking, and spatial analysis, enabling rich, interactive visualizations of geographic data.</p>
+                </div>
+                <div id="onx" style="display: none;">
+                    <h3>OnX Maps</h3>
+                    <p>OnX Maps specializes in providing comprehensive outdoor navigation and mapping solutions. Catering to outdoor enthusiasts, hunters, hikers, and off-road drivers, OnX Maps delivers detailed, accurate maps covering public lands, trails, and other points of interest. With features like offline maps, land ownership details, and custom waypoints, OnX Maps is the ultimate tool for outdoor adventure planning and exploration.</p>
+                </div>
+                <div id="esri" style="display: none;">
+                    <h3>Esri</h3>
+                    <p>Esri, the company behind ArcGIS, is a global market leader in geographic information system (GIS) software, location intelligence, and mapping. Esri's ArcGIS platform offers an extensive suite of tools for spatial analysis, data management, and visualization, supporting decision-making processes across government, commercial, academic, and nonprofit sectors. Esri's technology enables users to create impactful maps and apps that solve real-world problems through spatial analytics.</p>
+                </div>
+                <div id="here" style="display: none;">
+                    <h3>HERE</h3>
+                    <p>HERE Technologies offers advanced location data and technology services, powering mobile and web mapping applications for consumers, businesses, and governments worldwide. Known for its detailed road and traffic data, HERE's solutions support a wide range of applications, from navigation and logistics to urban planning and autonomous driving. With a focus on innovation and quality, HERE Technologies aims to enable an autonomous, connected, and efficient world through comprehensive location intelligence.</p>
+                </div>
+                <div id="osm" style="display: none;">
+                    <h3>OpenStreetMap</h3>
+                    <p>OpenStreetMap (OSM) is a collaborative project to create a free, editable map of the world, made by people like you. OSM emphasizes local knowledge and contributions, allowing users to view, edit, and use geographical data in a collaborative way. It's a versatile resource that serves as the foundation for a multitude of web and mobile applications, offering detailed maps and rich geographic data that are freely available under an open license.</p>
+                </div>
+            </section>
+            </article>
+            <aside class="amazon-ad">
+                <a href="https://www.amazon.com/BLACK-DIAMOND-Climbing-Rope-Green/dp/B079T36K1Q/ref=sr_1_5?crid=JK863AXIUG61&dib=eyJ2IjoiMSJ9.j-eu3XJi_30pdBzAd2LfuhaeZPFATEcQ1s2umgBxfMqVIdq8n0WiU3w99tVElmWS6IaDDQ--Q_vUsXuRfpVs9aPfN-jzt8D6XGgXy8uWZ6i40g_k-ecrPImJTvHUFqr0UA21Y90oy278LAo5zv79_6NBuK21aREZiDAfUJCZJ1eO2tSe_kr3vZ3EcyyMuNH3wp1l9sJqnW_EtlOiKa4s9UhJPmIVor7UjC9hY2ZHzm501qYL6-V_LCU_RC0wsnJFvXEdtthri64dxwSJ1lFknC3SlkRoamqpyz2dvuLFCDE.XffX2-dkCeKRuoQ6URcfZl5e73-Ay7Z8kz2V2r37Aa8&dib_tag=se&keywords=rock+climbing+rope+black+diamond&qid=1708399616&sprefix=rock+climbing+rope+black+diamond%2Caps%2C185&sr=8-5">
+                    <img src="https://m.media-amazon.com/images/W/MEDIAX_849526-T1/images/I/81kxdI3i+-S._AC_SX679_.jpg">
+                </a>
+            </aside>
+        <div class="footer">
+            <h2>Addendum</h2>
+            <ul>
+                <li>
+                    <p>The first thing that I did was move my "lastModified" script in to my new script file and couldn't get it to load. I figured out that I had to wrap the whole function in a 'DOMContentLoaded' EventListener, because the script was running before the footer was being rendered.</p>
+                </li>
+                <li>
+                    <p>It took me a while to figure out how to get each menu item to relate to the company descriptions, so I had to do some research to learn about adding data attributes and how to access them via javascript.</p>
+                </li>
+                <li>
+                    <p>When I added the instructions div and the javascript to hide it when you hovered over your first menu item, all of the rest of the code stopped working! I couldn't figure it out for a while, and at first I thought it had to do with changing the reference for "this" so that it wasn't calling the right element. I ended up changing around the order of the scripts to try to get it work and none of it was working. It turned out that I had just forgotten to close the div tag on the instructions element, so the problem was caused by malformed html rather than a problem with my javascript directly.</p>
+                </li>
+                <li>
+                    <p>Lastly, once I created this addendum, it expanded beyond the declared size of the footer so I had to figure out how to get it to display properly.</p>
+                </li>
+            </ul>
+            <p>Last updated: 
+                <span id="lastModified"></span>
+            </p>
+        </div>
+        </div>
+    </body>
+</html>
