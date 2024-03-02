@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>5x5 Grid</title>
+<style>
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+    width: 500px;
+    padding: 10px;
+  }
+  .grid-item {
+    background-color: #f0f0f0; 
+    border: 1px solid #000; 
+    padding-top: 100%; /* This creates a square aspect ratio */
+    position: relative;
+  }
+/*  .grid-item:hover{
+    background-color: white;
+  }*/
+  .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .lit {
+    background-color: yellow;
+  }
+</style>
+<script type="text/javascript" src="/script.js"></script>
+</head>
+<body>
+
+<div class="grid-container">
+  <!-- Repeat this div for each item in the grid -->
+  <div class="grid-item"><div class="content lit" data-row="1" data-column="1">1</div></div>
+  <div class="grid-item"><div class="content" data-row="1" data-column="2">2</div></div>
+  <div class="grid-item"><div class="content" data-row="1" data-column="3">3</div></div>
+  <div class="grid-item"><div class="content" data-row="1" data-column="4">4</div></div>
+  <div class="grid-item"><div class="content lit" data-row="1" data-column="5">5</div></div>
+  <div class="grid-item"><div class="content lit" data-row="2" data-column="1">6</div></div>
+  <div class="grid-item"><div class="content lit" data-row="2" data-column="2">7</div></div>
+  <div class="grid-item"><div class="content lit" data-row="2" data-column="3">8</div></div>
+  <div class="grid-item"><div class="content" data-row="2" data-column="4">9</div></div>
+  <div class="grid-item"><div class="content lit" data-row="2" data-column="5">10</div></div>
+  <div class="grid-item"><div class="content" data-row="3" data-column="1">11</div></div>
+  <div class="grid-item"><div class="content" data-row="3" data-column="2">12</div></div>
+  <div class="grid-item"><div class="content" data-row="3" data-column="3">13</div></div>
+  <div class="grid-item"><div class="content" data-row="3" data-column="4">14</div></div>
+  <div class="grid-item"><div class="content" data-row="3" data-column="5">15</div></div>
+  <div class="grid-item"><div class="content lit" data-row="4" data-column="1">16</div></div>
+  <div class="grid-item"><div class="content lit" data-row="4" data-column="2">17</div></div>
+  <div class="grid-item"><div class="content lit" data-row="4" data-column="3">18</div></div>
+  <div class="grid-item"><div class="content lit" data-row="4" data-column="4">19</div></div>
+  <div class="grid-item"><div class="content lit" data-row="4" data-column="5">20</div></div>
+  <div class="grid-item"><div class="content lit" data-row="5" data-column="1">21</div></div>
+  <div class="grid-item"><div class="content lit" data-row="5" data-column="2">22</div></div>
+  <div class="grid-item"><div class="content" data-row="5" data-column="3">23</div></div>
+  <div class="grid-item"><div class="content lit" data-row="5" data-column="4">24</div></div>
+  <div class="grid-item"><div class="content lit" data-row="5" data-column="5">25</div></div>
+</div>
+<footer>
+        <p>Last updated: 
+            <span id="lastModified"></span>
+        </p>
+    </footer>
+    <script type="text/javascript">
+         var x = document.lastModified;
+         document.getElementById('lastModified').textContent = x;
+    </script>
+</body>
+</html>
